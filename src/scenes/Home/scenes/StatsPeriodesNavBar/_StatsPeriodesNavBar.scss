@@ -1,0 +1,128 @@
+$header-height: 3em;
+
+%selected-period
+{
+  transition-duration:0.1s;
+  font-style: italic;
+  list-style-type: none;
+  font-size: 6vw;
+  font-weight: 700;
+  color: red;
+  letter-spacing: -0.1em;
+  span
+  {
+    display: inline;
+  }
+}
+
+.stats-period-nav
+{
+  font-family: 'Rubik', sans-serif;
+  display: block;
+  position: fixed;
+
+  left: 3em;
+  top: 20%;
+
+  .stats-bar
+  {
+    position: fixed;
+    z-index: -1;
+    top: 13em;
+    left: 5.7rem;
+
+    height: 60vh;
+    width: 0.6em;
+
+    // background-color: $background-color;
+  }
+
+  .side-nav
+  {
+    li
+    {
+      list-style-type: none;
+      position: relative fixed;
+      left: -2em;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 0 0 .1em;
+      text-transform: uppercase;
+      letter-spacing: -0.3em;
+      cursor: pointer;
+      color: black;
+
+      span
+      {
+        display: none;
+      }
+
+      &.selected
+      {
+        @extend %selected-period;
+      }
+
+    }
+
+    li:hover
+    {
+      letter-spacing:  0em;
+      span {
+        transition-duration: 1;
+        display: inline;
+      }
+    }
+  }
+
+  @media screen and (max-width: 815px) {
+    width: 80%;
+  }
+}
+
+.period-nav-top-enter
+{
+  opacity: 0;
+  transform: translateY(150px);
+
+  &.period-nav-top-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.period-nav-top-leave
+{
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+
+  &.period-nav-top-leave-active {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+}
+
+.period-nav-bottom-enter
+{
+  opacity: 0;
+  transform: translateY(-150px);
+
+  &.period-nav-bottom-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.period-nav-bottom-leave
+{
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+
+  &.period-nav-bottom-leave-active {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+}

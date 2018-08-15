@@ -1,0 +1,52 @@
+[
+      {
+        "name": "Laure Issa",
+        "urlImg": "laure.png",
+        "role": "project jeffe",
+        "music": [ "This Is The Day - The The",
+          "I'm Only Sleeping - The Beatles"]
+      },
+      {
+        "name": "Valentin Dufois",
+        "urlImg": "valentin.png",
+        "role": "frontend manager",
+        "music": [ "Resurrection - Son Lux",
+          "Grand Canyon - Kavinsky",
+          "I Love You but I'm Lost - Tears for Fears" ]
+      },
+      {
+        "name": "Marie-Lou Barbier",
+        "urlImg": "marielou.png",
+        "role": "frontend developer",
+        "music": [ "Romeo is Bleeding - Tom Waits",
+          "Virgo's Maze - Part Time",
+          "L'Amour Looks Something Like You - Kate Bush",
+          "New Kind Of Kick - The Cramps"]
+      },
+      {
+        "name": "Guillaume Lollier",
+        "urlImg": "guillaume.png",
+        "role": "backend manager",
+        "music": [ "Hilight Tribe - Free Tibet (Vini Vici Remix)",
+          "Sur Mon Nom - Caballero et Jean Jass" ]
+      },
+      {
+        "name": "Stella Poulain",
+        "urlImg": "stella.png",
+        "role": "backend developer",
+        "music": [ "Bad Karma - Axel Thesleff",
+          "In the Morning - Zhu" ]
+      },
+      {
+        "name": "Nina De Castro",
+        "urlImg": "nina.png",
+        "role": "backend developer",
+        "music": [ " The Magnificent Moon - Mildlife" ]
+      },
+      {
+        "name": "Audrey Combe",
+        "urlImg": "audrey.png",
+        "role": "backend developer",
+        "music": [ "LSD - Labrinth ft. Sia, Diplo" ]
+      }
+]

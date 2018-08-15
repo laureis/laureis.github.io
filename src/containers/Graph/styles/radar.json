@@ -1,0 +1,31 @@
+{
+  "tooltips": {
+    "enabled": false,
+    "mode": "nearest",
+    "intersect": false,
+    "custom": null
+  },
+  "title": {
+    "display": false
+  },
+  "legend": {
+    "display": false,
+    "labels": {
+      "hidden": true
+    }
+  },
+  "scale": {
+    "display": false,
+    "ticks": {
+      "display": false
+    },
+    "gridLines": {
+      "display": false
+    },
+    "angleLines": {
+      "display": false
+    }
+  },
+  "elements": {
+  }
+}
