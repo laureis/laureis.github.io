@@ -1,0 +1,18 @@
+.text-
+{
+  &link
+  {
+    cursor: pointer;
+
+    &:hover
+    {
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+
+  &danger
+  {
+    color: $main-color !important;
+  }
+}

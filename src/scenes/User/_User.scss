@@ -1,0 +1,10 @@
+.user-profile {
+
+    display: flex;
+    align-items: stretch;
+    
+    .profile-picture, .main-information, .following-information {
+        width: 30%;
+        flex-wrap: wrap;
+    }
+}

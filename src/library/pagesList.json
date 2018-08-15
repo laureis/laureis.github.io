@@ -1,0 +1,15 @@
+{
+    "":
+    {
+        "displayInHeader": false,
+        "name": "Home"
+    },
+    "settings": {
+        "displayInHeader": true,
+        "name": "Settings"
+    },
+    "about": {
+        "displayInHeader": true,
+        "name": "About"
+    }
+}

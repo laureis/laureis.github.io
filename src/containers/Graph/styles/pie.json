@@ -1,0 +1,21 @@
+{
+  "tooltips": {
+    "enabled": false,
+    "mode": "point",
+    "intersect": false,
+    "custom": null
+  },
+  "title": {
+    "display": false
+  },
+  "legend": {
+    "display": false,
+    "labels": {
+      "hidden": true
+    }
+  },
+  "scales": {
+  },
+  "elements": {
+  }
+}

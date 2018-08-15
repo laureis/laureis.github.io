@@ -1,0 +1,15 @@
+.home-stats
+{
+  width: 800px;
+  margin: auto;
+  padding: 0;
+  background-color: $light-color;
+
+  @media screen and (max-width: 1135px) {
+    width: 800px;
+  }
+  @media screen and (max-width: 815px) {
+    width: 80vw;
+  }
+
+}

@@ -1,0 +1,10 @@
+#page-structure
+{
+  padding-top: $header-height;
+  min-height:calc(100% - #{$header-height} );
+  background-image: url('~assets/images/earphones.png');
+  background-size: 30%;
+  background-position: bottom left;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+}

@@ -1,0 +1,126 @@
+// Hamburger & hamburger color
+
+header
+{
+  font-family:'Rubik', sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  overflow: hidden;
+
+  position: fixed;
+  z-index:1000;
+  top: 0;
+  left: 0;
+
+  height: $header-height;
+  width: 100%;
+  padding: 0 5rem;
+
+  background-color: $background-color;
+  box-shadow: 0 0 0 0 $main-color,
+              0 0 0 0 $light-color,
+              0 0 0 0 black,
+              0 0 0 0 $main-color;
+
+  transition: $header-transition,
+              box-shadow ease-out .5s .25s;
+
+  &.menu-opened.closing-animation
+  {
+    box-shadow: 0 0 0 100vh $main-color,
+                0 0 0 150vh $light-color,
+                0 0 0 175vh  black,
+                0 0 0 250vh $main-color;
+
+    transition: $header-transition,
+                box-shadow ease-out 0s .15s;
+  }
+
+  h3
+  {
+    display: block;
+    width: 80%;
+    height: $header-height;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: $light-color;
+    }
+    text-align: left;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: $header-height;
+    transition: $header-transition;
+
+    .red {
+      padding-left: .35rem;
+      letter-spacing: -0.1em;
+      color: red;
+    }
+
+    .page-title {
+      display: inline-block;
+      padding-left: .35rem;
+      color: #000;
+      font-size: 1rem;
+      transition: opacity $header-transition,
+                  width $header-transition;
+    }
+  }
+
+  h5
+  {
+    height: $header-height;
+    margin: 0;
+
+    .hamburger
+    {
+      display: inline-block;
+      padding: 14px;
+
+      outline: none;
+
+      .hamburger-box
+      {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .hamburger-label
+      {
+        display: inline-block;
+        margin-left: .5rem;
+        vertical-align: middle;
+
+        color: $hamburger-layer-color;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+
+  &.menu-opened
+  {
+    height: 100%;
+
+    h3
+    {
+      padding-top: 1rem;
+      font-size: 3rem;
+    }
+
+    .page-title
+    {
+      opacity: 0;
+      width: 0;
+    }
+
+    .account-line
+    {
+      display: block;
+    }
+  }
+}

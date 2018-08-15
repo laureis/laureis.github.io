@@ -1,0 +1,351 @@
+{
+  "periods": [
+    {
+      "key": "DAILY",
+      "name": "daily",
+      "period": "day",
+      "graphs": [
+        {
+          "type": "line",
+          "size": "wide",
+          "route": "/history",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Listening history",
+          "colors": {
+            "from": "rgba(255, 80, 80, .4)",
+            "to": "rgba(255, 80, 80, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "bar",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums listening times",
+          "colors": {
+            "from": "rgba(220, 150, 255, .4)",
+            "to": "rgba(220, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "radar",
+          "size": "small",
+          "route": "/stats/mostlistened/genres",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top genres",
+          "colors": {
+            "from": "rgba(255, 220, 130, .4)",
+            "to": "rgba(255, 220, 130, 1)"
+          }
+        },
+        {
+          "type": "pie",
+          "size": "small",
+          "route": "/stats/mostlistened/artists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top artists",
+          "colors": {
+            "from": "rgba(140, 225, 140, .4)",
+            "to": "rgba(140, 225, 140, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albumsbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums per artists",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "horizontalBar",
+          "size": "small",
+          "route": "/stats/mostlistened/tracksbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top tracks per artists",
+          "colors": {
+            "from": "rgba(255, 150, 80, .4)",
+            "to": "rgba(255, 150, 80, 1)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "WEEKLY",
+      "name": "weekly",
+      "period": "week",
+      "graphs": [
+        {
+          "type": "line",
+          "size": "wide",
+          "route": "/history",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Listening history",
+          "colors": {
+            "from": "rgba(255, 80, 80, .4)",
+            "to": "rgba(255, 80, 80, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "bar",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums listening times",
+          "colors": {
+            "from": "rgba(220, 150, 255, .4)",
+            "to": "rgba(220, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "radar",
+          "size": "small",
+          "route": "/stats/mostlistened/genres",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top genres",
+          "colors": {
+            "from": "rgba(255, 220, 130, .4)",
+            "to": "rgba(255, 220, 130, 1)"
+          }
+        },
+        {
+          "type": "pie",
+          "size": "small",
+          "route": "/stats/mostlistened/artists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top artists",
+          "colors": {
+            "from": "rgba(140, 225, 140, .4)",
+            "to": "rgba(140, 225, 140, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albumsbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums per artists",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "horizontalBar",
+          "size": "small",
+          "route": "/stats/mostlistened/tracksbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top tracks per artists",
+          "colors": {
+            "from": "rgba(255, 150, 80, .4)",
+            "to": "rgba(255, 150, 80, 1)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "MONTHLY",
+      "name": "monthly",
+      "period": "month",
+      "graphs": [
+        {
+          "type": "line",
+          "size": "wide",
+          "route": "/history",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Listening history",
+          "colors": {
+            "from": "rgba(255, 80, 80, .4)",
+            "to": "rgba(255, 80, 80, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "bar",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums listening times",
+          "colors": {
+            "from": "rgba(220, 150, 255, .4)",
+            "to": "rgba(220, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "radar",
+          "size": "small",
+          "route": "/stats/mostlistened/genres",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top genres",
+          "colors": {
+            "from": "rgba(255, 220, 130, .4)",
+            "to": "rgba(255, 220, 130, 1)"
+          }
+        },
+        {
+          "type": "pie",
+          "size": "small",
+          "route": "/stats/mostlistened/artists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top artists",
+          "colors": {
+            "from": "rgba(140, 225, 140, .4)",
+            "to": "rgba(140, 225, 140, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albumsbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums per artists",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "horizontalBar",
+          "size": "small",
+          "route": "/stats/mostlistened/tracksbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top tracks per artists",
+          "colors": {
+            "from": "rgba(255, 150, 80, .4)",
+            "to": "rgba(255, 150, 80, 1)"
+          }
+        }
+      ]
+    },
+    {
+      "key": "YEARLY",
+      "name": "yearly",
+      "period": "year",
+      "graphs": [
+        {
+          "type": "line",
+          "size": "wide",
+          "route": "/history",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Listening history",
+          "colors": {
+            "from": "rgba(255, 80, 80, .4)",
+            "to": "rgba(255, 80, 80, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "bar",
+          "size": "small",
+          "route": "/stats/mostlistened/albums",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums listening times",
+          "colors": {
+            "from": "rgba(220, 150, 255, .4)",
+            "to": "rgba(220, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "radar",
+          "size": "small",
+          "route": "/stats/mostlistened/genres",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top genres",
+          "colors": {
+            "from": "rgba(255, 220, 130, .4)",
+            "to": "rgba(255, 220, 130, 1)"
+          }
+        },
+        {
+          "type": "pie",
+          "size": "small",
+          "route": "/stats/mostlistened/artists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top artists",
+          "colors": {
+            "from": "rgba(140, 225, 140, .4)",
+            "to": "rgba(140, 225, 140, 1)"
+          }
+        },
+        {
+          "type": "doughnut",
+          "size": "small",
+          "route": "/stats/mostlistened/albumsbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top albums per artists",
+          "colors": {
+            "from": "rgba(150, 150, 255, .4)",
+            "to": "rgba(150, 150, 255, 1)"
+          }
+        },
+        {
+          "type": "horizontalBar",
+          "size": "small",
+          "route": "/stats/mostlistened/tracksbyartists",
+          "post": [{"key": "day", "value": "section"}],
+          "name": "Top tracks per artists",
+          "colors": {
+            "from": "rgba(255, 150, 80, .4)",
+            "to": "rgba(255, 150, 80, 1)"
+          }
+        }
+      ]
+    }
+  ],
+  "graphs": {
+    "Bar": {
+
+    },
+    "Doughnut": {
+
+    },
+    "Line": {
+
+    }
+  }
+}

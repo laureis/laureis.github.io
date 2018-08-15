@@ -1,0 +1,20 @@
+$field-height: 3rem;
+$field-font-size: 1rem;
+
+.field-input
+{
+  position: relative;
+  height: $field-height;
+  width: auto;
+  margin: 20px;
+
+  font-family:'Rubik';
+
+  background-color: #FFF;
+
+  box-shadow: 2px 2px red;
+  border: solid 1px $light-color;
+  border-radius: 5px;
+
+  overflow: hidden;
+}
