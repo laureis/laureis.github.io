@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>it felt free so free</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+        <script src="script.js" charset="utf-8"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+
+            body {
+                overflow:hidden;
+                margin:0;
+                padding:0;
+            }
+            .row {
+                display:flex;
+                flex-direction:row;
+            }
+
+            .text {
+                width:62vw;
+                height:100vh;
+            }
+
+            .bandrole {
+                width:3vw;
+            }
+
+            .picture {
+                width:35vw;
+                height:100vh;
+                            }
+
+            .center {
+                justify-content: center;
+                align-items:center;
+            }
+
+
+            .bandrole {
+                justify-content: center;
+                align-items:center;
+                border-right:0.5px solid black;
+                border-left:0.5px solid black;
+            }
+            .picture {
+                justify-content: flex-end;
+                align-items:center;
+            }
+            .column {
+                display:flex;
+                flex-direction:column;
+            }
+            .marquee-container {
+                width:40%;
+                height:150vh;
+            }
+
+            .picture img {
+                width:50%;
+                padding-bottom:100px;
+            }
+            #p2 {
+                position:absolute;
+                transform:translateY(-2.5vw);
+                z-index:-1;
+            }
+            #p1, #p2, #p4, #p5 {
+                font-family: Source Code Pro, monospace;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 5vw;
+                line-height: auto;
+            }
+            #p4 {
+                position:absolute;
+            }
+
+            #p5 {
+                transform: translateX(0.3vw);
+            }
+            #p3 {
+                font-family: Source Code Pro, monospace;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 8vw;
+                line-height: 7vw;
+            }
+            .all {
+            }
+            .marquee-text {
+                width:100vh;
+                height:100vh;
+                transform:rotate(-90deg);
+                font-family: Source Code Pro, monospace;
+            }
+            .bandrole {
+                padding-left:5vw;
+            }
+
+            .no-color {
+                color:rgba(0,0,0,0);
+            }
+            .color-rose {
+                color:rgba(176, 38, 118, 0.3);
+            }
+            .color-blue {
+                color:#DBDEED;
+            }
+            .add-stroke {
+                -webkit-text-stroke: 0.5px black;
+            }
+            .remove-stroke {
+                -webkit-text-stroke: 0px black;
+            }
+        </style>
+    </head>
+	<body>
+    
+    <div class="row">
+
+        <div class="text">
+            <div class="all">
+                <div id="p2" class="color-blue add-stroke">
+                    that i got <br />
+                    addicted to<br /> this
+                    feeling
+                </div>
+                <div id="p1"  class="no-color add-stroke">
+                    that i got <br />
+                    addicted to<br /> this
+                    feeling
+                </div>
+                <div id="p3"  class="add-stroke no-color">
+                    it felt<br />
+                    free <span id="p6" class="color-rose">free</span><br/>
+                    so free
+                </div>
+                <div id="p4" class="color-blue">
+                    0806manila0810<br />
+                    -melbourne0824
+                </div>
+                <div id="p5" class="no-color add-stroke">
+                        0806manila0810<br />
+                        -melbourne0824
+                    </div>
+            </div>
+        </div>
+        <div class="bandrole column">
+            <div class="marquee-container">
+                    <div class="marquee-text color-rose"> <marquee>
+                            in august 2019 i brought winter in the middle of my summer and went to a cage that had a very beautiful view at night
+                            /   in august 2019 i brought winter in the middle of my summer and went to a cage that had a very beautiful view at night
+                            / in august 2019 i brought winter in the middle of my summer and went to a cage that had a very beautiful view at night
+
+                    </marquee> </div>
+            </div>
+        </div>
+        <div class="column picture">
+            <img src="r.png" />
+        </div>
+    </div>
+        <script type="text/javascript">
+            var texts = [
+                "#p1", "#p2", "#p3", "#p4", "#p6"
+            ];
+            var stroke = [ "add-stroke", "remove-stroke"];
+            var color = ["no-color", "color-rose", "color-blue"];
+            
+            function bim() {
+                for (var i = 0; i<texts.length; i++) {
+                    $(texts[i]).removeAttr('class');
+                    $(texts[i]).attr('class', '');
+                    $(texts[i]).addClass(color[Math.floor(Math.random() * color.length)]);
+                    $(texts[i]).addClass(stroke[Math.floor(Math.random() * stroke.length)]);
+                }
+                setTimeout(bim, 500);
+            }
+            bim();
+        </script>
+        
+	</body>
+</html>

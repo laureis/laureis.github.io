@@ -1,0 +1,292 @@
+html, body {
+    height: 100%;
+    cursor:crosshair;
+}
+
+html, body {margin: 0; height: 100%;}
+
+::selection {
+    background:black; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background:black; /* WebKit/Blink Browsers */
+}
+
+body {
+    margin: 0;
+    background-color:white;
+}
+
+a {
+    text-decoration:none;
+}
+.logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+}
+
+.logo img {
+    position:fixed;
+    width:10rem;
+    padding:5rem;
+}
+.logo_path {
+    opacity:0.5;  
+    fill: none;
+    stroke:pink;
+    stroke-width: 1rem;
+    stroke-linejoin: round;
+}
+
+#main, #contact, #portfolio, #about {
+    min-height:100%;
+}
+
+#contact, #portfolio, #about {
+    padding-right:5vw;
+    padding-left:5vw;
+    padding-top:5vh;
+    padding-bottom:5vh;
+}
+
+.main__title {
+    position:fixed;    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding-left:5rem;  
+    padding-top:12rem;
+    justify-content: center;
+    font-size:8rem;
+    line-height:6rem;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.main__title .left {
+    color: rgb(0,0,0,0);
+    text-shadow: 0 0 0.2rem black;
+}
+
+.main__title .right {
+    color: rgb(0,0,0,0);
+    text-shadow: 0 0 0.2rem black;
+}
+
+nav {
+    height:95vh;
+    width:95vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.nav {
+    position:fixed;
+    width:60rem;
+    justify-content: space-between;
+    padding:2rem;
+    box-shadow: 0 0 0.2rem black;
+    color:#FEEDF3;
+    background-color: black;
+}
+
+.nav .description {
+    font-weight:bold;
+    font-size:1.8rem;
+    padding-right:22rem;
+    color: rgb(0,0,0,0);
+    text-shadow: 0 0 0.07rem #F54986;
+}
+
+
+.nav .link {
+    padding-right:3rem;
+    font-size:1.5rem;
+    color: rgb(0,0,0,0);
+    text-decoration:none;
+    text-shadow: 0 0 0.09rem white;
+}
+
+.clickable {
+    cursor:pointer;
+}
+
+.nav {
+    display: fixed; 
+}
+
+.main__contact__frame {
+    margin: 0;
+    height:100%;  
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right:5rem;
+}
+
+.contact__frame {
+    width:40vw;
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align:justify;
+    color: rgb(0,0,0,0);
+}
+
+.contact__frame  .a {
+    text-shadow:0 0 0.05rem black;
+    font-size:1rem;
+    grid-row: 1 / 2;
+}
+
+.contact__frame  .b {
+    font-size:1.8rem;
+    text-shadow:0 0 0.17rem black;
+    grid-row: 2 ;
+}
+
+.contact__frame .b span {
+    text-shadow:0 0 0.17rem #F54986;
+}
+
+.main__project__frame {
+    margin: 0;
+    min-height:100%;  
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: right;
+    padding-right:5rem;
+}
+
+.line_project {
+    display:flex;
+    margin-top:50px;
+}
+.project {
+    width:20vw;
+    margin-right:50px;
+}
+
+.project  .info {
+    width:100%;
+    border:1px solid black;
+    display:flex;
+}
+
+.project  .date {
+    text-shadow:0 0 0.05rem white;
+    font-size:18px;
+    width:20%;
+    padding:10px;
+}
+
+.project .title {
+    font-size:25px;
+    width:70%;
+    border-right:1px solid black;
+    padding:10px;
+    font-weight:bold;
+}
+
+.project .image {
+    width:100%;
+}
+
+.project img {
+    border-left:1px solid black;
+    border-right:1px solid black;
+}
+
+
+.main__about__frame {
+    margin: 0;
+    height:100vh;  
+    display: flex;
+    align-items: center;
+    align-content:center;
+    vertical-align:center;
+    justify-content: right;
+    padding-right:5rem;
+}
+
+.about__frame {
+    width:40vw;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 13rem 25rem;
+    text-align:justify;
+    color: rgb(0,0,0,0);
+}
+
+.about__frame  .a {
+    text-shadow:0 0 0.05rem black;
+    font-size:1rem;
+    grid-column: 1 / 2;
+}
+
+.about__frame  .b {
+    font-size:1.8rem;
+    text-shadow:0 0 0.17rem black;
+    grid-column: 2 ;
+}
+
+.about__frame .b span {
+    text-shadow:0 0 0.17rem #F54986;
+}
+
+
+
+.about__frame .right {
+    width: auto;
+    padding: 10rem;
+}
+
+.canvas__frame {
+    position:fixed;
+    z-index:-1000;
+}
+
+
+
+@media (max-width: 1200px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    body, .main__frame, .contact__frame, .about__frame {
+        display:flex;
+        text-align:center;
+        align-items:center;
+        flex-direction:column;
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+    .frame__logo, .contact__frame .form,  .about__frame .left,.about__frame .right, .form p {
+        margin:0;
+        padding:0;
+    }
+
+    #main, #contact, #portfolio, #about {
+        height:100%;
+    }    
+    .title, .logo {
+        font-size:4rem;
+        padding-right:0;
+        padding-left:0;
+        padding-top:5rem;
+        padding-bottom:10rem;
+    }
+    .nav, .form {
+        visibility:hidden;
+    }
+ } 

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
+
+body {
+    background-color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+}
+
+#box {
+    width:90vw;
+    height:90vh;
+    background-color:#DBDBDB;
+    background-image:url(bg.png);
+    background-size:120%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#thawra, #lebnen {
+    position:absolute;
+    width:90vw;
+    z-index:9999;
+}
+.row {
+    display:flex;
+    flex-direction:row;
+}
+
+.column {
+    display:flex;
+    flex-direction:column;
+}
+
+.centered {
+    justify-content:center;
+    align-items:center;
+}
+
+
+.mine, .revolutions, .lebanon {
+    padding:5vh;
+}
+
+.revolutions {
+    width:10vw;
+    min-height:60vh;
+}
+.revolutions svg {
+    width: 10vw;    
+    min-height:60vh;
+}
+
+.mine ._title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 157%;
+    letter-spacing: 0.7em;
+    width:20vw;
+}
+
+.mine ._text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 157%;
+    letter-spacing: 0.7em;
+    color:black;
+    transform: rotate(-90deg);
+    width: 20vw;
+    padding:5vh;
+}
+
+.red {
+    color:red;
+}
+
+.lebanon ._title {
+    width: 20vw;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 157%;
+    letter-spacing: 0.7em;
+    color: #E74C3C;
+    margin-bottom:25px;
+}
+
+.lebanon ._text {
+    width: 25vw;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 157%;
+    letter-spacing: 0.7em;
+    color: #000000;
+    text-align:justify;
+}
+
+.lebanon ._picture {
+    width:100%;
+    text-align:right;
+}
+
+.lebanon ._picture img {
+    width: 258.16px;
+    height: 221px;
+    padding-top:5vh;
+}
+
+/** bottom **/
+
+.bottom {
+    flex-grow:1;
+}
+
+.bottom ._text {
+    padding:5vh;
+    width: 691px;
+    height: 51px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 1.16em;
+    color: rgba(161, 161, 161, 0.2);
+    filter: blur(1px);
+    text-align:jusitfy;
+}
+
+.bottom ._text span {
+    font-family: Poppins;
+    color: rgba(161, 161, 161, 0.67);
+}
+
+.right {
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+
+/** BORDERS **/

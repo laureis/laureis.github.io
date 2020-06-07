@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>back to ReaLITy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+		<link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+        <script src="script.js" charset="utf-8"></script>
+        <link type="text/css" href="css/themename/jquery-ui-1.7.1.custom.css" rel="Stylesheet" />   
+	</head>
+	<body>
+    
+        <div class="row">
+        
+            <div class="column border">
+                    <a href="https://open.spotify.com/playlist/4tQV4EbfFdmZ61UPPQksXT?si=n-rm-WXfQ2-k6GErJieA8Q" target="_blank">
+                            https://open.spotify.com/playlist/4tQV4EbfFdmZ61UPPQksXT?si=n-rm-WXfQ2-k6GErJieA8Q
+                    </a>
+                <div class="drop-blue"></div>
+            </div>
+
+            <div class="column full">
+            <div id="container">
+            <div class="stickers row">
+                    <div class="sticker s1 pinkk" id="3">0</div>
+                    <div class="sticker s2" id="4">9</div>
+                    <div class="sticker s3" id="5">1</div>
+                    <div class="sticker s4" id="6">9</div>
+            </div>
+    
+            <div class="orange__filter" id="2"></div>
+
+            <div class="blue__filter" id="1"></div>
+
+        <div id="cd" class="circle">
+            <div class="circle c-1">
+                    <div class="circle c-6">
+
+                <div class="circle c-4">
+                    <div class="circle c-5">
+                <div class="circle c-3">
+                <div class="circle c-2">
+                    <div class="circle c-0">
+
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+        <div id="playlist">
+                <div class="row">
+                    <div class="title">
+                        <div class="padding">
+                        <span>sept.</span> <br />
+                        sept.
+                    </div>
+                    </div>
+                    <div class="column">
+                        <div class="date">
+
+                        </div>
+                        <div class="nothing">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="songs">
+                        <div class="row">
+                        <div class="list-songs">
+                            <div class="one-song" onclick="play('./audio/1.mp3')">1. bad kids</div>
+                            <div class="one-song" onclick="play('./audio/2.mp3')">2. wave</div>
+                            <div class="one-song" onclick="play('./audio/3.mp3')">3. the rock</div>
+                            <div class="one-song" onclick="play('./audio/4.mp3')">4. samar</div>
+                            <div class="one-song" onclick="play('./audio/5.mp3')">5. appel d'air</div>
+                            <div class="one-song" onclick="play('./audio/6.mp3')">6. A.I.</div>
+                            <div class="one-song" onclick="play('./audio/7.mp3')">7. laure's lover</div>
+                        </div>
+
+                        <div class="list-artists">
+                                - black lips<br />
+                                - wave to earth<br />
+                                - etta james<br />
+                                - yasmine hamdan<br />
+                                - pâle regard<br />
+                                - summer soul<br />
+                                - fairuz<br />
+                            </div>
+                         </div>
+                    </div>
+                    <div class="desc row">
+                        <div class="text-clmn">wellbutalittlebitofhell</div>
+                        <div class="column">
+                            <div class="blue-clmn"></div>
+                            <div class="black-clmn"></div>   
+                            <div class="orange-clmn"></div>
+                        </div>
+                    </div>
+                </div>
+   
+            </div>
+        
+                 
+            <div class="drops column">
+                <div class="drop-white"></div>
+                <div class="drop-black"></div>
+
+        </div>
+
+            </div>
+
+        <!--div class="black">
+            <div class="orange__filter" id="2"></div>
+
+            <div class="blue__filter" id="1"></div>
+            
+            <div class="playlist">
+                <div class="row">
+                    <div class="title">
+                        sept <br />
+                        sept <br />
+                    </div>
+                    <div class="column">
+                        <div class="date">
+
+                        </div>
+                        <div class="nothing">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="songs">
+
+                    </div>
+                    <div class="desc">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="text">
+
+            </div>
+
+            <div class="stickers">
+                    <div class="sticker" id="3">0</div>
+                    <div class="sticker" id="4">9</div>
+                    <div class="sticker" id="5">1</div>
+                    <div class="sticker" id="6">9</div>
+            </div>
+        </div-->
+    </div>
+    </div>
+        <script type="text/javascript">
+        $(function() {  
+$('.one-song').click(function(){
+    $('.one-song').css('color', 'black');
+    $(this).css('color', '#C34268');
+
+  });
+});
+
+            var audio = new Audio();
+            function play(song) {
+                audio.pause();
+                audio = new Audio(song);
+                audio.play();
+            }
+            function handle_mousedown(e){
+                window.my_dragging = {};
+                my_dragging.pageX0 = e.pageX;
+                my_dragging.pageY0 = e.pageY;
+                my_dragging.elem = this;
+                my_dragging.offset0 = $(this).offset();
+            function handle_dragging(e){
+                var left = my_dragging.offset0.left + (e.pageX - my_dragging.pageX0);
+                var top = my_dragging.offset0.top + (e.pageY - my_dragging.pageY0);
+                $(my_dragging.elem)
+                .offset({top: top, left: left});
+            }
+            function handle_mouseup(e){
+                $('body')
+                .off('mousemove', handle_dragging)
+                .off('mouseup', handle_mouseup);
+                }
+                $('body')
+                .on('mouseup', handle_mouseup)
+                .on('mousemove', handle_dragging);
+            }
+            $('#move').mousedown(handle_mousedown);
+            $('#cd').mousedown(handle_mousedown);
+            $('#playlist').mousedown(handle_mousedown);
+            $('#1').mousedown(handle_mousedown);
+            $('#2').mousedown(handle_mousedown);
+            $('#3').mousedown(handle_mousedown);
+            $('#4').mousedown(handle_mousedown);
+            $('#5').mousedown(handle_mousedown);
+            $('#6').mousedown(handle_mousedown);
+        </script>
+        
+	</body>
+</html>
