@@ -1,0 +1,38 @@
+{ [
+	{
+		"lieu": "Auster Club, Berlin",
+		"date": "07/03/15",
+		"tickets": "auster-clubc.com"
+	},
+	
+	{
+		"lieu": "Monseigneur, Paris",
+		"date": "10/03/15",
+		"tickets": "monseigneurparis.com"
+	},
+	
+	{
+		"lieu": "The Stillery, London",
+		"date": "12/03/15",
+		"tickets": "thestillery.co.uk"
+	},
+	
+	{
+		"lieu": "Sugar Factory, Amsterdam",
+		"date": "15/03/15",
+		"tickets": "sugarfactory.nl"
+	},
+	
+	{
+		"lieu": "Ideal Bar, Kopenhagen",
+		"date": "17/03/15",
+		"tickets": "idealbar.vega.dk"
+	},
+	
+	{
+		"lieu": "Obaren, Stockholm",
+		"date": "18/03/15",
+		"tickets": "obaren.se"
+	}
+]
+}

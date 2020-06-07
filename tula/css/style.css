@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+}
+
+html , body {
+	
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+	color:#F7F7F7
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
+	
+@font-face {
+    font-family: 'canter';
+    src: url('../fonts/Canter/canter_light-webfont.eot');
+    src: url('../fonts/Canter/canter_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Canter/canter_light-webfont.woff2') format('woff2'),
+         url('../fonts/Canter/canter_light-webfont.woff') format('woff'),
+         url('../fonts/Canter/canter_light-webfont.ttf') format('truetype'),
+         url('../fonts/Canter/canter_light-webfont.svg#canterlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/** PAGE PRINCIPALE **/
+#main_page {
+	
+	height:100vh;
+}
+
+#video_tula, video { 
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+	z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+video {
+	
+	z-index:-101;
+}
+
+#main_title {
+	
+	position:fixed;	
+	cursor:pointer;
+	font-family:'canter';
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 150px;
+	font-size:150px;
+    margin-left: -100px;
+    margin-top: -100px;
+	color:#F7F7F7;
+	text-transform:uppercase;
+	text-align:center;
+	transition:1s;
+}
+
+#main_title:hover {
+	
+	color:#778086;
+	transition:1s;
+}
+
+/** PAGE 2 **/
+
+#page {
+	
+	height:58vh;
+	width:100%;
+	z-index:1;
+	background: rgba(0, 0, 0, .65);
+	color:white;
+	font-size:20px;
+	font-family:'Dosis';
+	text-align:center;
+	overflow:hidden;
+}
+
+#home, #music, #contact, #tour, #news {
+
+	display:none;
+}
+
+p {
+	
+	padding:50px;
+	width:600px;
+	margin-right:auto;
+	margin-left:auto;
+	font-size:15px;
+	text-align:justify;
+	background:rgba(76, 17, 21, 0.3);
+	transition:1s;
+	font-weight:normal;
+}
+
+p:hover {
+
+	background:rgba(45,37,90, 0.3);
+}
+
+/* navigation bar */
+
+#logo {
+	
+	visibility:hidden;
+}
+
+	
+nav {
+	
+    font-family: 'Dosis';
+    width: 100%;
+    height: 80px;
+	color:#2D2556;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+nav ul {
+	
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+		
+nav ul li {
+	
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+}
+
+nav ul li.active {
+	
+    transition: 0.5s;
+    color: white;
+}
+
+nav ul li:hover:not(.active) {
+	
+    transition: 0.5s;
+	color:#778086;
+}
+
+
+/* home section */
+
+#home {
+
+	height:100vh;
+	overflow:hidden;
+}
+
+#home article {
+	
+	margin-top:150px;
+	margin-right:auto;
+	margin-left:auto;
+	font-size:25px;
+	font-weight:normal;
+	text-transform:uppercase;
+	
+}
+
+#intro {
+
+	visibility:hidden;
+}
+
+/*music section */
+
+#music {
+
+	width:700px;
+	height:400px;
+	position:relative;
+	top:25%;
+	transform:translateY(-25%);
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#music p {
+	
+	position:relative;
+	top:8px;
+	height:300px;
+	width:300px;
+	float:right;
+}
+
+#carrousel {
+
+	float:left;
+}
+
+#back, #next {
+
+	transition:0.3s;
+}
+.control {
+   
+	position: relative;
+	top:150px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.go {
+  
+	height:20px;
+	width:20px;
+	cursor: pointer;
+}
+
+.ctn-slide {
+	
+    /* position: relative; */
+	/* top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+
+.slide {
+	
+	width:300px;
+	height:300px;
+	margin-right:auto;
+	margin-left:auto;
+	padding:0;
+	overflow:hidden;
+}
+
+.slide img {
+	
+	width:300px;
+	height:300px;
+	padding:0;
+	margin:0;
+}
+
+.slide .description {
+	
+	font-size:13px;
+	background-color:#282627;
+	width:300px;
+	height:300px;
+	position:relative;
+	top:-22px;
+	opacity:0.9;
+}
+
+.slide:hover .description {
+	
+	transition:0.4s;
+	top:-80px;
+}
+
+.slide:hover span {
+
+	display:none;
+}
+
+iframe {
+	
+	border:0;
+}
+/*tour section */
+
+
+#tour_dates {
+
+	width:800px;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	top: 50%;
+    transform: translateY(30%);
+}
+
+
+#tour_dates li{
+
+	list-style:none;
+	display:flex;
+	text-align:left;
+	text-transform:uppercase;
+	border-bottom:1px solid #3D3D3D;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-size:17px;
+	transition:0.3s;
+	background: rgba(76, 17, 21, .3);
+}
+
+#tour_dates li:hover {
+	
+	background:rgba(45,37,90, 0.3);
+}
+
+a, a:hover, a:active, a:visited {
+	
+	color:white;
+	text-decoration:none;
+}
+.date {
+	
+	width:250px;
+}
+
+.lieu {
+	
+	width:400px;
+}
+
+
+.lieu, .date {
+	
+	padding-left:20px;
+}
+#tour h1 {
+	
+	margin-top:20px;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+/*news section*/
+
+#news {
+	
+	width:650px;
+	height:400px;
+	position:relative;
+	top:25%;
+	transform:translateY(-25%);
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#news p {
+	
+	width:300px;
+	text-align:center;
+}
+
+#news h1 {
+	
+	margin-top:20px;
+	text-align:center;
+	margin-bottom:30px;
+	font-size:26px;
+}
